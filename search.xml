@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[主题美化]]></title>
+    <url>%2F2019%2F02%2F16%2F%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%2F</url>
+    <content type="text"><![CDATA[1 添加标签页面 2 添加搜索功能 安装插件2.1 在自己博客根目录下（我的目录：D:\blog\hexo），执行如下命令 cnpm install hexo-generator-searchdb –save 2.2 修改站点配置文件 修改根目录下的_config.yml（我的目录：D:\blog_config.yml），在最底部添加如下配置 12345search: path: search.xml field: post format: html limit: 10000 2.3 修改主题配置文件 修改主体下的themes\next_config.yml配置文件（我的目录：D:\workspace\hexo\themes\next_config.yml），搜索local_search，修改enable为true 1234567local_search: enable: true # if auto, trigger search by changing input # if manual, trigger search by pressing enter key or search button trigger: auto # show top n results per article, show all results by setting to -1 top_n_per_article: 1 2.4 删除文章 123删除文章的过程一样也很简单，先删除本地文件，然后通过生成和部署命令进而将远程仓库中的文件也一并删除。具体来说，以最开始默认形成的helloworld.md这篇文章为例。首先进入到source / _post 文件夹中，找到helloworld.md文件，在本地直接执行删除。然后依次执行hexo g，hexo d，再去主页查看你就会发现你的博客上面已经空空如也了，这就是如何删除文章的方法。]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[test111; ;]]></title>
+    <url>%2F2019%2F02%2F16%2Ftest111%2F</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[hexo常用命令]]></title>
+    <url>%2F2019%2F02%2F16%2Fhexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[12345678910111213hexo n &quot;博客名&quot; 生成博客文章 在_postshexo g -d 生成静态文件和发表到github上hexo new &quot;postName&quot; #新建文章hexo new page &quot;pageName&quot; #新建页面hexo clean #清除部署緩存hexo n == hexo new #新建文章hexo g == hexo generate #生成静态页面至public目录hexo s == hexo server #开启预览访问端口（默认端口4000，可在浏览器输入localhost:4000预览）hexo d == hexo deploy #将.deploy目录部署到GitHubhexo g -d #生成加部署 hexo g -s #生成加预览hexo s --debug 开启debug模式]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[hexo添加锚链接]]></title>
+    <url>%2F2019%2F02%2F16%2Fhexo%E6%B7%BB%E5%8A%A0%E9%94%9A%E9%93%BE%E6%8E%A5%2F</url>
+    <content type="text"><![CDATA[拿我的说打开blog/themes/next/_config.yml,_config.yml这个文件下配置social_icon,在图标库找自己喜欢的小图标，并将名字复制在如下位置，保存即可。如下所示： social: GitHub: https://github.com/yourname || github CSDN: https://blog.csdn.net/qq_43503724 || copyright #E-Mail: mailto:yourname@gmail.com || envelope #Google: https://plus.google.com/yourname || google #Twitter: https://twitter.com/yourname || twitter #FB Page: https://www.facebook.com/yourname || facebook #VK Group: https://vk.com/yourname || vk #StackOverflow: https://stackoverflow.com/yourname || stack-overflow #YouTube: https://youtube.com/yourname || youtube #Instagram: https://instagram.com/yourname || instagram #Skype: skype:yourname?call|chat || skype social_icons: enable: true Github: github CSDN: copyright icons_only: false transition: false]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[scrapy]]></title>
+    <url>%2F2019%2F02%2F15%2Fscrapy%2F</url>
+    <content type="text"><![CDATA[scrapy是一个流行的爬虫框架。架构分层，适合复杂项目并易于扩展。封装异步包，实现并发请求和分布式部署。 框架架构介绍 引擎（scrapy engine)处理整个系统的数据流，触发事务。 调度器（scheduler ）接收引擎发过来的请求，压入队列，去重，决定下一次请求的url。 下载器（downloader)根据url请求网页，下载网页原始内容，并将网页内容返回给spiders。（基于twisted,异步请求） 爬虫（spiders)从网页信息中提取实体信息，返回单个实体item。也可以提取链接供之后爬取。 管道（pipeline)接收单个实体item，好像生产线一样进行加工。验证item是否有效，持久化数据（写csv或数据库）。 下载中间件、爬虫中间件、调度中间件（middle）上述主要模块无法满足的更细化或更前置的需求。例如django也有中间件，需求：用户进入视图函数前新建数据库连接、验证用户sessionid，请求后要销毁数据库链接。 运行流程 引擎从调度器里去一个url待请求 引擎接收到后封装为一个请求，交给下载器 下载器请求网页，返回response 爬虫解析response得到实体item item交给管道进行处理 安装scrapyscrapy依赖包较多，有些包用c写的需要vc编译器。 方法一：anaconda, 自带上千种编译好的科学计算相关包。优点自带编译后的scrapy。缺点：体积大，下载包300m，安装一个多G。主要是科学计算领域，大多数包用不上，flask django又没有需要新下。miniconda是anaconda的精简版本。版本有限。缺少.net会导致无报错失败。方法二(推荐)：pip install scrapy 哪些包报错需要vc编译器的，再单独去发布编译后的包的网站下载对应平台编译后的.whl文件安装。参考链接：1.第三方编译后包的网站 https://www.lfd.uci.edu/~gohlke/pythonlibs/#twisted。 图文教程 https://www.1owo.com/python/python/python-scrapy%E5%AE%89%E8%A3%85%E4%B9%8Bwindows%E7%8E%AF%E5%A2%83%E4%B8%8B/ 创建项目创建项目 scrapy startproject [项目名]根据预设模板创建爬虫文件 scrapy genspider [爬虫名] [域名]运行爬虫 scrapy crawl [爬虫名]]]></content>
+      <categories>
+        <category>scrapy</category>
+      </categories>
+      <tags>
+        <tag>scrapy</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2019%2F01%2F10%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>
