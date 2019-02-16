@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[代码托管平台]]></title>
+    <url>%2F2019%2F02%2F16%2F%E4%BB%A3%E7%A0%81%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0%2F</url>
+    <content type="text"><![CDATA[1.Git是开放式版本控制系统，git安装参考网站具体git用法细节参考廖雪峰官方网站Git git的优点git是分布式的，svn不是git分布式本地就可以用，可以随便保存各种历史痕迹，不用担心污染服务器，连不上服务器也能提交代码、查看log。GIT分支和SVN的分支不同分支在SVN中实际上是版本库中的一份copy，而git一个仓库是一个快照，所以git 切换、合并分支等操作更快速。git有一个强大的代码仓库管理系统 - gitlab可以很方便的管理权限、代码review，创建、管理project 2.Github是在线的基于Git的代码托管服务。[github具体使用参考我的另一篇博客] (https://blog.csdn.net/qq_43503724/article/details/86103744)GitHub是2008年由Ruby on Rails编写而成。GitHub同时提供付费账户和免费账户。这两种账户都可以创建公开的代码仓库，只有付费账户可以创建私有的代码仓库。 3. Gitlab解决了这个问题, 可以在上面创建免费的私人repo。 GitLab是利用 Ruby on Rails 一个开源的版本管理系统，实现一个自托管的Git项目仓库，可通过Web界面进行访问公开的或者私人项目。它拥有与Github类似的功能，能够浏览源代码，管理缺陷和注释。可以管理团队对仓库的访问，它非常易于浏览提交过的版本并提供一个文件历史库。团队成员可以利用内置的简单聊天程序(Wall)进行交流。它还提供一个代码片段收集功能可以轻松实现代码复用，便于日后有需要的时候进行查找. 4.码云(gitee)也可以创建免费的私人的repo。4.1 码云介绍：码云是开源中国社区2013年推出的基于 Git 的完全免费的代码托管服务，这个服务是基于 Gitlab 开源软件所开发的，在 Gitlab 的基础上做了大量的改进和定制开发，目前已经成为国内最大的代码托管系统，致力于为国内开发者提供优质稳定的托管服务。 4.2 码云功能码云除了提供最基础的 Git 代码托管之外，还提供代码在线查看、历史版本查看、Fork、Pull Request、打包下载任意版本、Issue、Wiki 、保护分支、代码质量检测、PaaS项目演示等方便管理、开发、协作、共享的功能。]]></content>
+      <categories>
+        <category>代码托管平台</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[主题美化]]></title>
     <url>%2F2019%2F02%2F16%2F%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%2F</url>
     <content type="text"><![CDATA[1 添加标签页面 2 添加搜索功能 安装插件2.1 在自己博客根目录下（我的目录：D:\blog\hexo），执行如下命令 cnpm install hexo-generator-searchdb –save 2.2 修改站点配置文件 修改根目录下的_config.yml（我的目录：D:\blog_config.yml），在最底部添加如下配置 12345search: path: search.xml field: post format: html limit: 10000 2.3 修改主题配置文件 修改主体下的themes\next_config.yml配置文件（我的目录：D:\workspace\hexo\themes\next_config.yml），搜索local_search，修改enable为true 1234567local_search: enable: true # if auto, trigger search by changing input # if manual, trigger search by pressing enter key or search button trigger: auto # show top n results per article, show all results by setting to -1 top_n_per_article: 1 2.4 删除文章 123删除文章的过程一样也很简单，先删除本地文件，然后通过生成和部署命令进而将远程仓库中的文件也一并删除。具体来说，以最开始默认形成的helloworld.md这篇文章为例。首先进入到source / _post 文件夹中，找到helloworld.md文件，在本地直接执行删除。然后依次执行hexo g，hexo d，再去主页查看你就会发现你的博客上面已经空空如也了，这就是如何删除文章的方法。]]></content>
