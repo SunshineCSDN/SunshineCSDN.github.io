@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo,">
+  <meta name="keywords" content="解析方式,">
 
 
 
@@ -79,18 +79,28 @@
 
 
 
-<meta name="description" content="拿我的说打开blog/themes/next/_config.yml,_config.yml这个文件下配置social_icon,在图标库找自己喜欢的小图标，并将名字复制在如下位置，保存即可。如下所示： social:  GitHub: https://github.com/yourname || github  CSDN: https://blog.csdn.net/qq_43503724 ||">
-<meta name="keywords" content="Hexo">
+<meta name="description" content="正则表达式（regular express）:表示一段有规律的信息。 使用正则表达式有如下步骤。  （1）寻找规律。   （2）使用正则符号表示规律。​    （3）提取信息。​    1.1 正则表达式的基本符号​     1.2在python中使用正则表达式（1）findall的函数原型为：re.findall(pattern, string , flags=0)pattern表示正则表达式，">
+<meta name="keywords" content="解析方式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo添加锚链接">
-<meta property="og:url" content="http://yoursite.com/2019/02/16/hexo添加锚链接/index.html">
+<meta property="og:title" content="re正则">
+<meta property="og:url" content="http://yoursite.com/2019/02/20/re正则/index.html">
 <meta property="og:site_name" content="Sunshine">
-<meta property="og:description" content="拿我的说打开blog/themes/next/_config.yml,_config.yml这个文件下配置social_icon,在图标库找自己喜欢的小图标，并将名字复制在如下位置，保存即可。如下所示： social:  GitHub: https://github.com/yourname || github  CSDN: https://blog.csdn.net/qq_43503724 ||">
+<meta property="og:description" content="正则表达式（regular express）:表示一段有规律的信息。 使用正则表达式有如下步骤。  （1）寻找规律。   （2）使用正则符号表示规律。​    （3）提取信息。​    1.1 正则表达式的基本符号​     1.2在python中使用正则表达式（1）findall的函数原型为：re.findall(pattern, string , flags=0)pattern表示正则表达式，">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-16T12:34:16.864Z">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181109153048811.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181109160159710.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181109162142560.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181109170756776.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2018110917365957.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181109174916741.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181214223038455.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181214223146900.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181214223311988.png">
+<meta property="og:updated_time" content="2019-02-20T14:35:36.903Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo添加锚链接">
-<meta name="twitter:description" content="拿我的说打开blog/themes/next/_config.yml,_config.yml这个文件下配置social_icon,在图标库找自己喜欢的小图标，并将名字复制在如下位置，保存即可。如下所示： social:  GitHub: https://github.com/yourname || github  CSDN: https://blog.csdn.net/qq_43503724 ||">
+<meta name="twitter:title" content="re正则">
+<meta name="twitter:description" content="正则表达式（regular express）:表示一段有规律的信息。 使用正则表达式有如下步骤。  （1）寻找规律。   （2）使用正则符号表示规律。​    （3）提取信息。​    1.1 正则表达式的基本符号​     1.2在python中使用正则表达式（1）findall的函数原型为：re.findall(pattern, string , flags=0)pattern表示正则表达式，">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20181109153048811.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70">
 
 
 
@@ -120,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/02/16/hexo添加锚链接/">
+  <link rel="canonical" href="http://yoursite.com/2019/02/20/re正则/">
 
 
 
 
 
-  <title>hexo添加锚链接 | Sunshine</title>
+  <title>re正则 | Sunshine</title>
   
 
 
@@ -295,7 +305,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/16/hexo添加锚链接/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/20/re正则/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Sunshine">
@@ -312,7 +322,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">hexo添加锚链接</h1>
+          <h1 class="post-title" itemprop="name headline">re正则</h1>
         
 
         <div class="post-meta">
@@ -324,8 +334,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-16T19:39:24+08:00">
-                2019-02-16
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-20T22:34:04+08:00">
+                2019-02-20
               </time>
             
 
@@ -347,8 +357,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
+                  <a href="/categories/爬虫/" itemprop="url" rel="index">
+                    <span itemprop="name">爬虫</span>
                   </a>
                 </span>
 
@@ -384,18 +394,19 @@
       
 
       
-        <p>拿我的说打开blog/themes/next/_config.yml,_config.yml这个文件下配置social_icon,在图标库找自己喜欢的小图标，并将名字复制在如下位置，保存即可。<br>如下所示：</p>
-<p>social:<br>  GitHub: <a href="https://github.com/yourname" target="_blank" rel="noopener">https://github.com/yourname</a> || github<br>  CSDN: <a href="https://blog.csdn.net/qq_43503724" target="_blank" rel="noopener">https://blog.csdn.net/qq_43503724</a> || copyright</p>
-<p>  #E-Mail: mailto:<a href="mailto:yourname@gmail.com" target="_blank" rel="noopener">yourname@gmail.com</a> || envelope</p>
-<p>  #Google: <a href="https://plus.google.com/yourname" target="_blank" rel="noopener">https://plus.google.com/yourname</a> || google</p>
-<p>  #Twitter: <a href="https://twitter.com/yourname" target="_blank" rel="noopener">https://twitter.com/yourname</a> || twitter</p>
-<p>  #FB Page: <a href="https://www.facebook.com/yourname" target="_blank" rel="noopener">https://www.facebook.com/yourname</a> || facebook</p>
-<p>  #VK Group: <a href="https://vk.com/yourname" target="_blank" rel="noopener">https://vk.com/yourname</a> || vk</p>
-<p>  #StackOverflow: <a href="https://stackoverflow.com/yourname" target="_blank" rel="noopener">https://stackoverflow.com/yourname</a> || stack-overflow</p>
-<p>  #YouTube: <a href="https://youtube.com/yourname" target="_blank" rel="noopener">https://youtube.com/yourname</a> || youtube</p>
-<p>  #Instagram: <a href="https://instagram.com/yourname" target="_blank" rel="noopener">https://instagram.com/yourname</a> || instagram</p>
-<p>  #Skype: skype:yourname?call|chat || skype</p>
-<p>social_icons:<br>  enable: true<br>  Github: github<br>  CSDN: copyright<br>  icons_only: false<br>  transition: false</p>
+        <h2 id="正则表达式（regular-express）-表示一段有规律的信息。"><a href="#正则表达式（regular-express）-表示一段有规律的信息。" class="headerlink" title="正则表达式（regular express）:表示一段有规律的信息。"></a>正则表达式（regular express）:表示一段有规律的信息。</h2><p> 使用正则表达式有如下步骤。<br>  （1）寻找规律。<br>   （2）使用正则符号表示规律。<br>​    （3）提取信息。<br>​    <strong>1.1 正则表达式的基本符号</strong><br>​    <img src="https://img-blog.csdnimg.cn/20181109153048811.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><strong>1.2在python中使用正则表达式</strong><br>（1）findall的函数原型为：<br>re.findall(pattern, string , flags=0)<br>pattern表示正则表达式，string表示原来的字符串，flags表示一些特殊功能的标志（可忽略不写）。<br>findall的结果是一个列表，包含了所有的匹配到的结果。<br>如果没有匹配到的结果，返回空列表。如下例所示：<br><img src="https://img-blog.csdnimg.cn/20181109160159710.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><strong>flags参数</strong><br>函数原型中有一个flags参数，可以忽略不写的。<br>不省略时，具有一些辅助功能：忽略大小写、忽略换行符等。<br>flag.<br><strong>要匹配的内容存在换行符，要忽略换行符就需要使用到“re.S”这个。</strong><br>使用re.S作为flag来忽略换行符<br><img src="https://img-blog.csdnimg.cn/20181109162142560.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>（2）search :<br>search()的用法和findall()的用法一样，但是search()只会返回第一个满足要求的的字符串。一旦找到符合要求的内容，就会停止查找。<br><strong>如果匹配成功，则是一个正则表达式的对象，如果没有匹配到任何数据，就是none。</strong></p>
+<p>（3）”.<em>“ 和”.</em>?”区别：<br>“.<em>“：贪婪模式，获取最长的满足条件的字符串。<br>“.</em>?”：非贪婪模式，获取最短的满足条件的字符串。<br><img src="https://img-blog.csdnimg.cn/20181109170756776.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="1-2正则表达式的提取技巧"><a href="#1-2正则表达式的提取技巧" class="headerlink" title="1.2正则表达式的提取技巧"></a>1.2正则表达式的提取技巧</h2><p>（1）先抓大再抓小<br>一些无效内容和有效内容可能具有相同的规则。而我们想要的是有效内容，怎么实现呢？</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">有效书本：</span><br><span class="line">正在读：Python</span><br><span class="line">正在读：C++</span><br><span class="line">正在读：C#</span><br><span class="line"></span><br><span class="line">无效书本：</span><br><span class="line">以前读：Ruby</span><br><span class="line">以前读：JAVA</span><br></pre></td></tr></table></figure>
+<p>==怎么实现 想要获得有效书本的名单==<br><img src="https://img-blog.csdnimg.cn/2018110917365957.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>（2）括号内和括号外</p>
+<p>==<em>括号外面前后有其它字符，表示提取信息的开端和结尾，不包括在提取信息里。</em>括号里面前后有其它普通字符，表示提取信息的开端和结尾，包括在提取信息里==<br><strong>下例如下：</strong><br><img src="https://img-blog.csdnimg.cn/20181109174916741.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="1-3-re-match与re-search与re-findall的区别："><a href="#1-3-re-match与re-search与re-findall的区别：" class="headerlink" title="1.3 re.match与re.search与re.findall的区别："></a>1.3 re.match与re.search与re.findall的区别：</h2><p>re.match只匹配字符串的开始，如果字符串开始不符合正则表达式，则匹配失败，函数返回None；而re.search匹配整个字符串，直到找到一个匹配。<br><img src="https://img-blog.csdnimg.cn/20181214223038455.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="1-4-1-使用re替换string中每一个匹配的子串后返回替换后的字符串。"><a href="#1-4-1-使用re替换string中每一个匹配的子串后返回替换后的字符串。" class="headerlink" title="1.4.1 使用re替换string中每一个匹配的子串后返回替换后的字符串。"></a>1.4.1 使用re替换string中每一个匹配的子串后返回替换后的字符串。</h2><p>格式：</p>
+<p>re.sub(pattern, repl, string, count)<br><img src="https://img-blog.csdnimg.cn/20181214223146900.png" alt="在这里插入图片描述"></p>
+<h3 id="1-4-2-re-sub还允许使用函数对匹配项的替换进行复杂的处理。"><a href="#1-4-2-re-sub还允许使用函数对匹配项的替换进行复杂的处理。" class="headerlink" title="1.4.2 re.sub还允许使用函数对匹配项的替换进行复杂的处理。"></a>1.4.2 re.sub还允许使用函数对匹配项的替换进行复杂的处理。</h3><p>如：re.sub(r’\s’, lambda m: ‘[‘ + m.group(0) + ‘]’, text, 0)；将字符串中的空格’ ‘替换为’[ ]’。<br><img src="https://img-blog.csdnimg.cn/20181214223311988.png" alt="在这里插入图片描述"></p>
 
       
     </div>
@@ -413,7 +424,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+            <a href="/tags/解析方式/" rel="tag"># 解析方式</a>
           
         </div>
       
@@ -426,8 +437,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/02/15/scrapy/" rel="next" title="scrapy">
-                <i class="fa fa-chevron-left"></i> scrapy
+              <a href="/2019/02/20/Xpath用法/" rel="next" title="Xpath用法">
+                <i class="fa fa-chevron-left"></i> Xpath用法
               </a>
             
           </div>
@@ -435,10 +446,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/02/16/hexo常用命令/" rel="prev" title="hexo常用命令">
-                hexo常用命令 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -490,8 +497,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -587,6 +603,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#正则表达式（regular-express）-表示一段有规律的信息。"><span class="nav-number">1.</span> <span class="nav-text">正则表达式（regular express）:表示一段有规律的信息。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2正则表达式的提取技巧"><span class="nav-number">2.</span> <span class="nav-text">1.2正则表达式的提取技巧</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-re-match与re-search与re-findall的区别："><span class="nav-number">3.</span> <span class="nav-text">1.3 re.match与re.search与re.findall的区别：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-4-1-使用re替换string中每一个匹配的子串后返回替换后的字符串。"><span class="nav-number">4.</span> <span class="nav-text">1.4.1 使用re替换string中每一个匹配的子串后返回替换后的字符串。</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-2-re-sub还允许使用函数对匹配项的替换进行复杂的处理。"><span class="nav-number">4.1.</span> <span class="nav-text">1.4.2 re.sub还允许使用函数对匹配项的替换进行复杂的处理。</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

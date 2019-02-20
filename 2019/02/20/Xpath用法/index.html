@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo,">
+  <meta name="keywords" content="解析方式,">
 
 
 
@@ -79,18 +79,33 @@
 
 
 
-<meta name="description" content="拿我的说打开blog/themes/next/_config.yml,_config.yml这个文件下配置social_icon,在图标库找自己喜欢的小图标，并将名字复制在如下位置，保存即可。如下所示： social:  GitHub: https://github.com/yourname || github  CSDN: https://blog.csdn.net/qq_43503724 ||">
-<meta name="keywords" content="Hexo">
+<meta name="description" content="1.XPath 的介绍：XPath（XML Path)是一种查询语言，它能在XML(Extensible Markup Language, 可扩展标记语言)和HTML的树状结构中寻找结点。形象一点来说，XPath就是一种根据“地址”来“找人”的语言。用正则表达式来提取信息，经常会出现不明原因的无法提取想要内容的情况。最后即便是绞尽脑汁终于把想要的内容提取出来，却发现浪费太多时间。需要查找的内容越复">
+<meta name="keywords" content="解析方式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo添加锚链接">
-<meta property="og:url" content="http://yoursite.com/2019/02/16/hexo添加锚链接/index.html">
+<meta property="og:title" content="Xpath用法">
+<meta property="og:url" content="http://yoursite.com/2019/02/20/Xpath用法/index.html">
 <meta property="og:site_name" content="Sunshine">
-<meta property="og:description" content="拿我的说打开blog/themes/next/_config.yml,_config.yml这个文件下配置social_icon,在图标库找自己喜欢的小图标，并将名字复制在如下位置，保存即可。如下所示： social:  GitHub: https://github.com/yourname || github  CSDN: https://blog.csdn.net/qq_43503724 ||">
+<meta property="og:description" content="1.XPath 的介绍：XPath（XML Path)是一种查询语言，它能在XML(Extensible Markup Language, 可扩展标记语言)和HTML的树状结构中寻找结点。形象一点来说，XPath就是一种根据“地址”来“找人”的语言。用正则表达式来提取信息，经常会出现不明原因的无法提取想要内容的情况。最后即便是绞尽脑汁终于把想要的内容提取出来，却发现浪费太多时间。需要查找的内容越复">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-16T12:34:16.864Z">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181211223254478.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181211223421424.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181213181444469.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181213181527908.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181213182321949.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181213193315560.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2018121122384970.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2018121122393317.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181213171600953.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181213171636809.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181213204511896.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181213205526745.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181213210012817.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181213211124805.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70">
+<meta property="og:updated_time" content="2019-02-20T14:32:47.245Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo添加锚链接">
-<meta name="twitter:description" content="拿我的说打开blog/themes/next/_config.yml,_config.yml这个文件下配置social_icon,在图标库找自己喜欢的小图标，并将名字复制在如下位置，保存即可。如下所示： social:  GitHub: https://github.com/yourname || github  CSDN: https://blog.csdn.net/qq_43503724 ||">
+<meta name="twitter:title" content="Xpath用法">
+<meta name="twitter:description" content="1.XPath 的介绍：XPath（XML Path)是一种查询语言，它能在XML(Extensible Markup Language, 可扩展标记语言)和HTML的树状结构中寻找结点。形象一点来说，XPath就是一种根据“地址”来“找人”的语言。用正则表达式来提取信息，经常会出现不明原因的无法提取想要内容的情况。最后即便是绞尽脑汁终于把想要的内容提取出来，却发现浪费太多时间。需要查找的内容越复">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20181211223254478.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70">
 
 
 
@@ -120,13 +135,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/02/16/hexo添加锚链接/">
+  <link rel="canonical" href="http://yoursite.com/2019/02/20/Xpath用法/">
 
 
 
 
 
-  <title>hexo添加锚链接 | Sunshine</title>
+  <title>Xpath用法 | Sunshine</title>
   
 
 
@@ -295,7 +310,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/16/hexo添加锚链接/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/20/Xpath用法/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Sunshine">
@@ -312,7 +327,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">hexo添加锚链接</h1>
+          <h1 class="post-title" itemprop="name headline">Xpath用法</h1>
         
 
         <div class="post-meta">
@@ -324,8 +339,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-16T19:39:24+08:00">
-                2019-02-16
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-20T22:29:31+08:00">
+                2019-02-20
               </time>
             
 
@@ -347,8 +362,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
+                  <a href="/categories/爬虫/" itemprop="url" rel="index">
+                    <span itemprop="name">爬虫</span>
                   </a>
                 </span>
 
@@ -384,18 +399,29 @@
       
 
       
-        <p>拿我的说打开blog/themes/next/_config.yml,_config.yml这个文件下配置social_icon,在图标库找自己喜欢的小图标，并将名字复制在如下位置，保存即可。<br>如下所示：</p>
-<p>social:<br>  GitHub: <a href="https://github.com/yourname" target="_blank" rel="noopener">https://github.com/yourname</a> || github<br>  CSDN: <a href="https://blog.csdn.net/qq_43503724" target="_blank" rel="noopener">https://blog.csdn.net/qq_43503724</a> || copyright</p>
-<p>  #E-Mail: mailto:<a href="mailto:yourname@gmail.com" target="_blank" rel="noopener">yourname@gmail.com</a> || envelope</p>
-<p>  #Google: <a href="https://plus.google.com/yourname" target="_blank" rel="noopener">https://plus.google.com/yourname</a> || google</p>
-<p>  #Twitter: <a href="https://twitter.com/yourname" target="_blank" rel="noopener">https://twitter.com/yourname</a> || twitter</p>
-<p>  #FB Page: <a href="https://www.facebook.com/yourname" target="_blank" rel="noopener">https://www.facebook.com/yourname</a> || facebook</p>
-<p>  #VK Group: <a href="https://vk.com/yourname" target="_blank" rel="noopener">https://vk.com/yourname</a> || vk</p>
-<p>  #StackOverflow: <a href="https://stackoverflow.com/yourname" target="_blank" rel="noopener">https://stackoverflow.com/yourname</a> || stack-overflow</p>
-<p>  #YouTube: <a href="https://youtube.com/yourname" target="_blank" rel="noopener">https://youtube.com/yourname</a> || youtube</p>
-<p>  #Instagram: <a href="https://instagram.com/yourname" target="_blank" rel="noopener">https://instagram.com/yourname</a> || instagram</p>
-<p>  #Skype: skype:yourname?call|chat || skype</p>
-<p>social_icons:<br>  enable: true<br>  Github: github<br>  CSDN: copyright<br>  icons_only: false<br>  transition: false</p>
+        <h2 id="1-XPath-的介绍："><a href="#1-XPath-的介绍：" class="headerlink" title="1.XPath 的介绍："></a>1.XPath 的介绍：</h2><p>XPath（XML Path)是一种查询语言，它能在XML(Extensible Markup Language, 可扩展标记语言)和HTML的树状结构中寻找结点。形象一点来说，XPath就是一种根据“地址”来“找人”的语言。<br>用正则表达式来提取信息，经常会出现不明原因的无法提取想要内容的情况。最后即便是绞尽脑汁终于把想要的内容提取出来，却发现浪费太多时间。需要查找的内容越复杂，构造正则表达式所需要花费的时间也越多。而XPath却不一样，熟练使用XPath以后，构造不同的XPath，所需要花费的时间是一样的，所以用XPath从HTML源代码中提取信息可以大大提高效率。</p>
+<p><strong>在python中使用XPath,需要安装一个第三方库：lxml 。</strong><br>在终端中输入： pip install lxml</p>
+<h2 id="2-XPath-语法："><a href="#2-XPath-语法：" class="headerlink" title="2.XPath 语法："></a>2.XPath 语法：</h2><p>使用XPath的代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import lxml html</span><br><span class="line">selector = lxml.fromstring(&apos;网页源代码‘)</span><br><span class="line">info = selector.xpath(&apos;一段xpath语句&apos;)</span><br></pre></td></tr></table></figure></p>
+<h3 id="2-1-XPath-语句格式"><a href="#2-1-XPath-语句格式" class="headerlink" title="2.1 XPath 语句格式"></a>2.1 XPath 语句格式</h3><p><strong>获取文本：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//标签1[@属性1=“属性值1”]/标签2[@属性2=“属性值2”]/..../text()</span><br></pre></td></tr></table></figure></p>
+<p>获取属性值<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//标签1[@属性1=“属性值1”]/标签2[@属性2=“属性值2”]/..../@属性n</span><br></pre></td></tr></table></figure></p>
+<p>[@属性1=“属性值1”]不是必需的，它的作用是过滤相同的标签。在不须要过滤相同标签的情况下可以省略。</p>
+<h3 id="2-2-xpath-提取想要的信息"><a href="#2-2-xpath-提取想要的信息" class="headerlink" title="2.2 xpath 提取想要的信息"></a>2.2 xpath 提取想要的信息</h3><p><img src="https://img-blog.csdnimg.cn/20181211223254478.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>获取的结果·：<br><img src="https://img-blog.csdnimg.cn/20181211223421424.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="2-2-XPath的特殊用法："><a href="#2-2-XPath的特殊用法：" class="headerlink" title="2.2 XPath的特殊用法："></a>2.2 XPath的特殊用法：</h3><p><strong>2.2.1   以相同字符串开头</strong> </p>
+<h4 id="在xpath中，属性以某些字符串开头，可以写为："><a href="#在xpath中，属性以某些字符串开头，可以写为：" class="headerlink" title="在xpath中，属性以某些字符串开头，可以写为："></a>在xpath中，属性以某些字符串开头，可以写为：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//标签[starts-with(@属性名， “相同的开头部分”）]</span><br></pre></td></tr></table></figure>
+<h4 id="以“abc”开头："><a href="#以“abc”开头：" class="headerlink" title="以“abc”开头："></a>以“abc”开头：</h4><p><img src="https://img-blog.csdnimg.cn/20181213181444469.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h4 id="结果如下："><a href="#结果如下：" class="headerlink" title="结果如下："></a>结果如下：</h4><p><img src="https://img-blog.csdnimg.cn/20181213181527908.png" alt="在这里插入图片描述"></p>
+<h3 id="2-2-2-属性值包含相同的字符串"><a href="#2-2-2-属性值包含相同的字符串" class="headerlink" title="2.2.2 属性值包含相同的字符串"></a>2.2.2 属性值包含相同的字符串</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//标签[contains(@属性名， “相同的开头部分”）]</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20181213182321949.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h4 id="结果如下：-1"><a href="#结果如下：-1" class="headerlink" title="结果如下："></a>结果如下：</h4><p><img src="https://img-blog.csdnimg.cn/20181213193315560.png" alt="在这里插入图片描述"></p>
+<h3 id="2-3-对XPath返回的对象执行XPath"><a href="#2-3-对XPath返回的对象执行XPath" class="headerlink" title="2.3 对XPath返回的对象执行XPath"></a>2.3 对XPath返回的对象执行XPath</h3><p><strong>2.3.1使用string(.)关键字获取所有文本信息</strong><br><img src="https://img-blog.csdnimg.cn/2018121122384970.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><strong>结果如下所示：</strong><br><img src="https://img-blog.csdnimg.cn/2018121122393317.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><strong>2.3.2直接使用XPath 语句来提取</strong><br><strong>代码</strong><br><img src="https://img-blog.csdnimg.cn/20181213171600953.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><strong>结果</strong><br><img src="https://img-blog.csdnimg.cn/20181213171636809.png" alt="在这里插入图片描述"></p>
+<h3 id="3-使用谷歌浏览器辅助构造XPath。"><a href="#3-使用谷歌浏览器辅助构造XPath。" class="headerlink" title="3 使用谷歌浏览器辅助构造XPath。"></a>3 使用谷歌浏览器辅助构造XPath。</h3><p>在构造XPath语句的过程中，需要寻找”标志性“标签。但是遇到混乱的代码，就不能单纯靠眼睛来看了。借助谷歌浏览器来协助分析网页结构，可以大大提高分析效率。</p>
+<h3 id="3-1Google-Chrome自带的开发者工具可以将网页源代码转换为树状结构，大大提高网页的可读性。在网页上单击右键，在弹出的快捷菜单中选择”检查”命令，打开开发者工具，如下图所示结果："><a href="#3-1Google-Chrome自带的开发者工具可以将网页源代码转换为树状结构，大大提高网页的可读性。在网页上单击右键，在弹出的快捷菜单中选择”检查”命令，打开开发者工具，如下图所示结果：" class="headerlink" title="3.1Google Chrome自带的开发者工具可以将网页源代码转换为树状结构，大大提高网页的可读性。在网页上单击右键，在弹出的快捷菜单中选择”检查”命令，打开开发者工具，如下图所示结果："></a>3.1Google Chrome自带的开发者工具可以将网页源代码转换为树状结构，大大提高网页的可读性。在网页上单击右键，在弹出的快捷菜单中选择”检查”命令，打开开发者工具，如下图所示结果：</h3><p><img src="https://img-blog.csdnimg.cn/20181213204511896.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="3-2-打开开发者工具，使鼠标指针在开发者窗口中的HTML代码中移动，可以看到页面上不同地方会高亮，说明当前鼠标指针指向的这个标签，就对应了网页中高亮的这一部分的代码。"><a href="#3-2-打开开发者工具，使鼠标指针在开发者窗口中的HTML代码中移动，可以看到页面上不同地方会高亮，说明当前鼠标指针指向的这个标签，就对应了网页中高亮的这一部分的代码。" class="headerlink" title="3.2 打开开发者工具，使鼠标指针在开发者窗口中的HTML代码中移动，可以看到页面上不同地方会高亮，说明当前鼠标指针指向的这个标签，就对应了网页中高亮的这一部分的代码。"></a>3.2 打开开发者工具，使鼠标指针在开发者窗口中的HTML代码中移动，可以看到页面上不同地方会高亮，说明当前鼠标指针指向的这个标签，就对应了网页中高亮的这一部分的代码。<img src="https://img-blog.csdnimg.cn/20181213205526745.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></h3><h3 id="3-3-除了根据代码找网页位置，还可以根据网页位置找代码。点击下图方框框住的按钮，并将鼠标指针在网页中移动，可以看到开发者工具窗口中的代码随之滚动。"><a href="#3-3-除了根据代码找网页位置，还可以根据网页位置找代码。点击下图方框框住的按钮，并将鼠标指针在网页中移动，可以看到开发者工具窗口中的代码随之滚动。" class="headerlink" title="3.3 除了根据代码找网页位置，还可以根据网页位置找代码。点击下图方框框住的按钮，并将鼠标指针在网页中移动，可以看到开发者工具窗口中的代码随之滚动。"></a>3.3 除了根据代码找网页位置，还可以根据网页位置找代码。点击下图方框框住的按钮，并将鼠标指针在网页中移动，可以看到开发者工具窗口中的代码随之滚动。</h3><p><img src="https://img-blog.csdnimg.cn/20181213210012817.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"> </p>
+<h3 id="3-4-此时开发者工具中高亮显示的这一行代码，即为这个想要获取内容所在的HTML源代码的位置。在上面单击右键，选择”Copy”-由-“Copy-XPath”命令。"><a href="#3-4-此时开发者工具中高亮显示的这一行代码，即为这个想要获取内容所在的HTML源代码的位置。在上面单击右键，选择”Copy”-由-“Copy-XPath”命令。" class="headerlink" title="3.4 此时开发者工具中高亮显示的这一行代码，即为这个想要获取内容所在的HTML源代码的位置。在上面单击右键，选择”Copy” 由 “Copy XPath”命令。"></a>3.4 此时开发者工具中高亮显示的这一行代码，即为这个想要获取内容所在的HTML源代码的位置。在上面单击右键，选择”Copy” 由 “Copy XPath”命令。</h3><h3 id="3-5-爬去豆瓣页面上的所有-书名-和-作者-。"><a href="#3-5-爬去豆瓣页面上的所有-书名-和-作者-。" class="headerlink" title="3.5 爬去豆瓣页面上的所有==书名==和==作者==。"></a>3.5 爬去豆瓣页面上的所有==书名==和==作者==。</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">import lxml.html</span><br><span class="line">import requests</span><br><span class="line">import re</span><br><span class="line">html= requests.get(&apos;http://book.douban.com&apos;).content.decode()</span><br><span class="line">selector = lxml.html.fromstring(html)</span><br><span class="line">info = selector.xpath(&apos;//*[@id=&quot;content&quot;]/div/div[1]/div[1]/div[2]/div/div/ul/li/div/div/a/text()&apos;)</span><br><span class="line">author = selector.xpath(&apos;//div[@class=&quot;slide-list&quot;]/ul/li/div//div[@class=&quot;author&quot;]/text()&apos;)</span><br><span class="line">print(info)</span><br><span class="line">print(&apos;*&apos;*50)</span><br><span class="line">list1 = []</span><br><span class="line">for n in author:</span><br><span class="line">    a = re.sub(&apos;[\n ]&apos;, &apos;&apos;,n)</span><br><span class="line">    list1.append(a)</span><br><span class="line">print(list1)</span><br></pre></td></tr></table></figure>
+<h3 id="运行结果如下："><a href="#运行结果如下：" class="headerlink" title="运行结果如下："></a>运行结果如下：</h3><p><img src="https://img-blog.csdnimg.cn/20181213211124805.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTAzNzI0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>注：==本书参考Python爬虫开发从入门到实站==</p>
 
       
     </div>
@@ -413,7 +439,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+            <a href="/tags/解析方式/" rel="tag"># 解析方式</a>
           
         </div>
       
@@ -426,8 +452,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/02/15/scrapy/" rel="next" title="scrapy">
-                <i class="fa fa-chevron-left"></i> scrapy
+              <a href="/2019/02/16/git介绍/" rel="next" title="git介绍">
+                <i class="fa fa-chevron-left"></i> git介绍
               </a>
             
           </div>
@@ -436,8 +462,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/02/16/hexo常用命令/" rel="prev" title="hexo常用命令">
-                hexo常用命令 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/02/20/re正则/" rel="prev" title="re正则">
+                re正则 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -490,8 +516,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -587,6 +622,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-XPath-的介绍："><span class="nav-number">1.</span> <span class="nav-text">1.XPath 的介绍：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-XPath-语法："><span class="nav-number">2.</span> <span class="nav-text">2.XPath 语法：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-XPath-语句格式"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 XPath 语句格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-xpath-提取想要的信息"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 xpath 提取想要的信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-XPath的特殊用法："><span class="nav-number">2.3.</span> <span class="nav-text">2.2 XPath的特殊用法：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#在xpath中，属性以某些字符串开头，可以写为："><span class="nav-number">2.3.1.</span> <span class="nav-text">在xpath中，属性以某些字符串开头，可以写为：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#以“abc”开头："><span class="nav-number">2.3.2.</span> <span class="nav-text">以“abc”开头：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#结果如下："><span class="nav-number">2.3.3.</span> <span class="nav-text">结果如下：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-2-属性值包含相同的字符串"><span class="nav-number">2.4.</span> <span class="nav-text">2.2.2 属性值包含相同的字符串</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#结果如下：-1"><span class="nav-number">2.4.1.</span> <span class="nav-text">结果如下：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-对XPath返回的对象执行XPath"><span class="nav-number">2.5.</span> <span class="nav-text">2.3 对XPath返回的对象执行XPath</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-使用谷歌浏览器辅助构造XPath。"><span class="nav-number">2.6.</span> <span class="nav-text">3 使用谷歌浏览器辅助构造XPath。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1Google-Chrome自带的开发者工具可以将网页源代码转换为树状结构，大大提高网页的可读性。在网页上单击右键，在弹出的快捷菜单中选择”检查”命令，打开开发者工具，如下图所示结果："><span class="nav-number">2.7.</span> <span class="nav-text">3.1Google Chrome自带的开发者工具可以将网页源代码转换为树状结构，大大提高网页的可读性。在网页上单击右键，在弹出的快捷菜单中选择”检查”命令，打开开发者工具，如下图所示结果：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-打开开发者工具，使鼠标指针在开发者窗口中的HTML代码中移动，可以看到页面上不同地方会高亮，说明当前鼠标指针指向的这个标签，就对应了网页中高亮的这一部分的代码。"><span class="nav-number">2.8.</span> <span class="nav-text">3.2 打开开发者工具，使鼠标指针在开发者窗口中的HTML代码中移动，可以看到页面上不同地方会高亮，说明当前鼠标指针指向的这个标签，就对应了网页中高亮的这一部分的代码。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-除了根据代码找网页位置，还可以根据网页位置找代码。点击下图方框框住的按钮，并将鼠标指针在网页中移动，可以看到开发者工具窗口中的代码随之滚动。"><span class="nav-number">2.9.</span> <span class="nav-text">3.3 除了根据代码找网页位置，还可以根据网页位置找代码。点击下图方框框住的按钮，并将鼠标指针在网页中移动，可以看到开发者工具窗口中的代码随之滚动。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-此时开发者工具中高亮显示的这一行代码，即为这个想要获取内容所在的HTML源代码的位置。在上面单击右键，选择”Copy”-由-“Copy-XPath”命令。"><span class="nav-number">2.10.</span> <span class="nav-text">3.4 此时开发者工具中高亮显示的这一行代码，即为这个想要获取内容所在的HTML源代码的位置。在上面单击右键，选择”Copy” 由 “Copy XPath”命令。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-爬去豆瓣页面上的所有-书名-和-作者-。"><span class="nav-number">2.11.</span> <span class="nav-text">3.5 爬去豆瓣页面上的所有==书名==和==作者==。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运行结果如下："><span class="nav-number">2.12.</span> <span class="nav-text">运行结果如下：</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
